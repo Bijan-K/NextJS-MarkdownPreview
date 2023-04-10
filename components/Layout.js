@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import Footer from './Footer';
-import Header from './Header';
 
 export default function Layout({ title, keywords, description, children }) {
   return (
@@ -12,9 +10,7 @@ export default function Layout({ title, keywords, description, children }) {
         <link href="/favicon.ico" rel="icon" />
       </Head>
 
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <main className="w-full h-screen bg-slate-700 flex-col">{children}</main>
     </div>
   );
 }

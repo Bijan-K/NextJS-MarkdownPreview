@@ -8,13 +8,15 @@ import TheLine from '@/components/TheLine';
 export default function Home() {
   return (
     <Layout>
-      <Header />
-      <div className="flex h-5/6">
-        <MarkInput />
-        <TheLine />
-        <MarkOutput />
+      <div className="flex w-full relative h-screen bg-slate-700 flex-col">
+        <Header />
+        <div className="grow flex">
+          <MarkInput />
+          <TheLine />
+          <MarkOutput />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   );
 }

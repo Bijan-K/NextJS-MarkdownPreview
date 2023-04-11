@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function Layout({ title, keywords, description, children }) {
   return (
-    <div>
+    <div className="h-screen">
       <Head>
         <title>{title}</title>
         <meta name="keywords" content={keywords} />
@@ -10,7 +10,7 @@ export default function Layout({ title, keywords, description, children }) {
         <link href="/favicon.ico" rel="icon" />
       </Head>
 
-      <main className="w-full h-screen bg-slate-700 flex-col">{children}</main>
+      <main className="w-full h-full">{children}</main>
     </div>
   );
 }

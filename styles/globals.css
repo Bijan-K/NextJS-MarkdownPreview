@@ -39,3 +39,11 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+::-webkit-scrollbar {
+  width: 2px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}

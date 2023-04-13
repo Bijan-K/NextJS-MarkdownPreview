@@ -10,7 +10,7 @@ export default function Home() {
     <Layout>
       <div className="flex w-full relative h-screen bg-slate-700 flex-col">
         <Header />
-        <div className="grow flex">
+        <div className="grow flex overflow-hidden">
           <MarkInput />
           <TheLine />
           <MarkOutput />

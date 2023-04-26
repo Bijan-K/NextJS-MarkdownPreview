@@ -5,5 +5,9 @@ Simple Markdown Previewer(live)
 
 to run:
 ```bash
+npm install
+
 npm run dev
 ```
+
+Still needs some work.. it doesn't always work properly. 

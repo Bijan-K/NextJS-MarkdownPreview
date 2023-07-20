@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import MarkContext from '@/context/MarkContext';
-import { marked } from 'marked';
-import DOMPurify from 'isomorphic-dompurify';
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 
 export default function MarkOutput() {
   const { MarkOutput } = useContext(MarkContext);
@@ -10,11 +10,11 @@ export default function MarkOutput() {
     <div
       className="w-1/2 text-start mx-4 my-4 text-lg overflow-scroll"
       id="content"
-      dangerouslySetInnerHTML={{
-        __html: DOMPurify.sanitize(
-          marked.parse(MarkOutput.replace(/\n/g, '<br>'))
-        ),
-      }}
-    ></div>
+    >
+      <ReactMarkdown
+        remarkPlugins={[gfm]}
+        children={MarkOutput.replace(/\n/g, ' \n\n')}
+      />
+    </div>
   );
 }

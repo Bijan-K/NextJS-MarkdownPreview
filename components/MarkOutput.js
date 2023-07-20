@@ -8,13 +8,10 @@ export default function MarkOutput() {
 
   return (
     <div
-      className="w-1/2 text-start mx-4 my-4 text-lg overflow-scroll"
+      className="w-1/2 text-start mx-4 my-4 text-lg text-white overflow-scroll prose max-w-none prose-strong:text-white prose-strong:font-extrabold"
       id="content"
     >
-      <ReactMarkdown
-        remarkPlugins={[gfm]}
-        children={MarkOutput.replace(/\n/g, ' \n\n')}
-      />
+      <ReactMarkdown remarkPlugins={[gfm]} children={MarkOutput} />
     </div>
   );
 }

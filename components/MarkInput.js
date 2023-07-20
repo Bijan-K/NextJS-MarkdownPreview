@@ -13,7 +13,7 @@ export default function MarkInput() {
       <textarea
         type="text"
         placeholder="Write here..."
-        className=" w-full h-[95%] bg-slate-700 text-start text-lg"
+        className="w-full h-[95%] bg-slate-700 text-start text-lg"
         onChange={ChangeHandler}
       />
     </div>

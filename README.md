@@ -1,4 +1,4 @@
-# Simple Markdown Previewer(live)
+# Live Markdown Previewer
 
 ![image](https://github.com/Bijan-K/NextJS-MarkdownPreview/assets/80640045/36e2713b-636b-42ef-938d-b5a6880b3005)
 
